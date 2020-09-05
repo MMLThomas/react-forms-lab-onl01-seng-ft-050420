@@ -14,7 +14,7 @@ class LoginForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    if (!this.state.username || !this.state.password) return null
+    if (!this.state.username || !this.state.password){return null}
     this.props.handleLogin(this.state)
   }
 
